@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">我的第一个程序</string>
+
+    <string name="slip">跳转到实验四</string>
+    <string name="hello">HelloWorld!</string>
+    <string name="text_view_hellow_world">你好，Android</string>
+
+    <string name="exp4_1">Hello</string>
+    <string name="exp4_2">JNU</string>
+    <string name="exp4_button">change text</string>
+
+</resources>
