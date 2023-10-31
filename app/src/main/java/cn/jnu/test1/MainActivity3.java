@@ -1,6 +1,11 @@
 package cn.jnu.test1;
 
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,5 +48,25 @@ public class MainActivity3 extends AppCompatActivity {
 
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity3.this));
+
+        registerForContextMenu(recyclerView);
+
     }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        //item.getOrder()
+        switch (item.getItemId()) {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                return super.onContextItemSelected(item);
+        }
+        return true;
+    }
+
 }
